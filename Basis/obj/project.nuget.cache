@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "yc9E2skCmdM5rmkbwTlhNlGBXqKRwkCIN/6ul7skebso1XoFgIM6ILiGaxg++e/TlA8vG30kn9J38yu1AQdX9g==",
+  "success": true,
+  "projectFilePath": "E:\\黑马.net\\.Net学习代码\\Basis\\Basis.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.10\\microsoft.netcore.app.host.win-x64.3.1.10.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
