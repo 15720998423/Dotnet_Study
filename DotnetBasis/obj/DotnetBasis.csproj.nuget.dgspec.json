@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\黑马.net\\.Net学习代码\\Basis\\Basis.csproj": {}
+    "E:\\黑马.net\\.Net学习代码\\DotnetBasis\\DotnetBasis.csproj": {}
   },
   "projects": {
-    "E:\\黑马.net\\.Net学习代码\\Basis\\Basis.csproj": {
+    "E:\\黑马.net\\.Net学习代码\\DotnetBasis\\DotnetBasis.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\黑马.net\\.Net学习代码\\Basis\\Basis.csproj",
-        "projectName": "Basis",
-        "projectPath": "E:\\黑马.net\\.Net学习代码\\Basis\\Basis.csproj",
+        "projectUniqueName": "E:\\黑马.net\\.Net学习代码\\DotnetBasis\\DotnetBasis.csproj",
+        "projectName": "DotnetBasis",
+        "projectPath": "E:\\黑马.net\\.Net学习代码\\DotnetBasis\\DotnetBasis.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\黑马.net\\.Net学习代码\\Basis\\obj\\",
+        "outputPath": "E:\\黑马.net\\.Net学习代码\\DotnetBasis\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",

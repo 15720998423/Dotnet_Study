@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace Basis
+namespace DotnetBasis
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("你好");
+            Console.WriteLine("Hello World!");
         }
     }
 }
