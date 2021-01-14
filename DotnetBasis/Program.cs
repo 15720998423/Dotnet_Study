@@ -117,7 +117,7 @@ namespace DotnetBasis
 
             #region 数组的交换
             //数组的交换
-            string[] str = { "a", "b", "c", "d", "e", "f","g","h"};
+            //string[] str = { "a", "b", "c", "d", "e", "f","g","h"};
             //有8个元素，换了4次
             //n个元素换了n/2次
             // 第0次      "a"---> "h"       下标0和下标7交换    0+7=7      长度-1
@@ -128,19 +128,56 @@ namespace DotnetBasis
 
 
             //交换的次数是数组的长度除于2
-            for (int i = 0; i < str.Length/2; i++)
-            {
-                //要将str[i]和str[str.length-1-i]交换
-                string temp = str[i];
-                str[i] = str[str.Length - 1 - i];
-                str[str.Length - 1 - i] = temp;
-            }
-            foreach (var item in str)
-            {
-                Console.WriteLine(item);
-            }  
-          
+            //for (int i = 0; i < str.Length/2; i++)
+            //{
+            //    //要将str[i]和str[str.length-1-i]交换
+            //    string temp = str[i];
+            //    str[i] = str[str.Length - 1 - i];
+            //    str[str.Length - 1 - i] = temp;
+            //}
+            //foreach (var item in str)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
             #endregion
+
+
+            #region 冒泡排序
+            int[] arr = { 5, 9, 6, 7, 2 };
+            //两两交换
+            //第0轮，比较4次
+            //第1轮，比较3次
+            //第2轮，比较2次
+            //第3轮，比较1次
+            //  i    次数=个数-1-i
+            //轮数+这一轮比较的次数=个数-1
+            //有5个人比较了4次
+            for (int i = 0; i < arr.Length-1; i++)//外层循环控制论数字
+            {
+                //每i轮比较的次数是长度-1-i
+                for (int j = 0; j < arr.Length-1-i; j++)
+                {
+                    //j和j+1进行比较
+                    if (arr[j]<arr[j + 1])
+                    {
+                        int temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                    }
+                }
+            }
+            //foreach (var item in arr)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    Console.WriteLine(arr[i]);
+
+            //}
+            #endregion
+
 
 
             ////////////////////////////////////////////////////////////////////
