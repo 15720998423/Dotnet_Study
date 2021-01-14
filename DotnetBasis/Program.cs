@@ -115,6 +115,33 @@ namespace DotnetBasis
             #endregion
 
 
+            #region 数组的交换
+            //数组的交换
+            string[] str = { "a", "b", "c", "d", "e", "f","g","h"};
+            //有8个元素，换了4次
+            //n个元素换了n/2次
+            // 第0次      "a"---> "h"       下标0和下标7交换    0+7=7      长度-1
+            // 第1次       "b"--> "g"        下标1和下标6交换   1+6=7        长度-1
+            //  第2次      "c"-->"f"          下标2和下标5交换   2+5=7           长度-1
+            // 第3次          "d"-->"e"          下标3和下标4交换   3+4=7        长度-1
+            //   i次                                i和下标为长度-1-i交换    i+？=长度-1    
+
+
+            //交换的次数是数组的长度除于2
+            for (int i = 0; i < str.Length/2; i++)
+            {
+                //要将str[i]和str[str.length-1-i]交换
+                string temp = str[i];
+                str[i] = str[str.Length - 1 - i];
+                str[str.Length - 1 - i] = temp;
+            }
+            foreach (var item in str)
+            {
+                Console.WriteLine(item);
+            }  
+          
+            #endregion
+
 
             ////////////////////////////////////////////////////////////////////
             //                          _ooOoo_                               //
