@@ -1,0 +1,13 @@
+E:\黑马.net\.Net学习代码\DotnetBasis\bin\Debug\netcoreapp3.1\DotnetBasis.exe
+E:\黑马.net\.Net学习代码\DotnetBasis\bin\Debug\netcoreapp3.1\DotnetBasis.deps.json
+E:\黑马.net\.Net学习代码\DotnetBasis\bin\Debug\netcoreapp3.1\DotnetBasis.runtimeconfig.json
+E:\黑马.net\.Net学习代码\DotnetBasis\bin\Debug\netcoreapp3.1\DotnetBasis.runtimeconfig.dev.json
+E:\黑马.net\.Net学习代码\DotnetBasis\bin\Debug\netcoreapp3.1\DotnetBasis.dll
+E:\黑马.net\.Net学习代码\DotnetBasis\bin\Debug\netcoreapp3.1\DotnetBasis.pdb
+E:\黑马.net\.Net学习代码\DotnetBasis\obj\Debug\netcoreapp3.1\DotnetBasis.csprojAssemblyReference.cache
+E:\黑马.net\.Net学习代码\DotnetBasis\obj\Debug\netcoreapp3.1\DotnetBasis.AssemblyInfoInputs.cache
+E:\黑马.net\.Net学习代码\DotnetBasis\obj\Debug\netcoreapp3.1\DotnetBasis.AssemblyInfo.cs
+E:\黑马.net\.Net学习代码\DotnetBasis\obj\Debug\netcoreapp3.1\DotnetBasis.csproj.CoreCompileInputs.cache
+E:\黑马.net\.Net学习代码\DotnetBasis\obj\Debug\netcoreapp3.1\DotnetBasis.dll
+E:\黑马.net\.Net学习代码\DotnetBasis\obj\Debug\netcoreapp3.1\DotnetBasis.pdb
+E:\黑马.net\.Net学习代码\DotnetBasis\obj\Debug\netcoreapp3.1\DotnetBasis.genruntimeconfig.cache
