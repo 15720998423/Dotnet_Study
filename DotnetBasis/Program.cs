@@ -7,6 +7,7 @@ using DotnetBasis.job;
 using DotnetBasis.moni;
 using DotnetBasis.Over;
 using DotnetBasis.port;
+using DotnetBasis.Sequence;
 using DotnetBasis.Shape;
 using System;
 using System.Collections;
@@ -14,17 +15,100 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DotnetBasis
 {
-   public class Program
+    #region 基础
+    //声明一委托指向一个函数
+    //public delegate void DelSayHi(string name);
+    //public delegate void DelSayHi();
+    //public delegate int DelConpare<T>(T t1,T t2);
+    #endregion
+    public class Program
     {
        
         static void Main(string[] args)
         {
 
+            #region 基础
+            #region 多播委托
+            //DelSayHi del = T1;
+            //del();
+
+            //del += T2;
+            //del += T3;
+            //del += T4;
+            #endregion
+
+            #region 泛型委托
+            //   int[] nums = { 1, 5, 8, 9, 12 };
+            //int max=   GetMax<int>(nums, Comparel);
+            //   Console.WriteLine(max);
+
+
+            //   string[] names = { "adwadad", "afafawd", "dawdg" };
+            //    string max1=    GetMax<string>(names, (string s1, string s2) =>
+            //   {
+            //       return s1.Length - s2.Length;
+            //   });
+            //   Console.WriteLine(max1);
+            //   Console.ReadKey();
+            #endregion
+
+            #region lamda表达式
+            //DelSayHi del = (string name) => { Console.WriteLine("你好" + name); };
+            //del("张三");
+            #endregion
+
+            #region 匿名函数
+            //DelSayHi del = delegate (string name)
+            // {
+            //     Console.WriteLine("你好" + name);
+            // };
+            //del("张三");
+            #endregion
+
+            #region 委托
+            //DelSayHi del = new DelSayHi(SayHelloEnglish);
+            //del("张三");
+            //Console.ReadKey();
+
+            //Test("张三", SayHelloChinese);
+            //Console.ReadKey();
+
+            #endregion
+
+            #region 要将序列化对象的类  标记为可以被序列化的[Serializable] 序列化
+            //Order o = new Order();
+            //o.Name = "张三";
+            //o.Age = 18;
+            //o.Gender = '男';
+            //使用FileStream写入到本地
+            //using (FileStream fsWrite = new FileStream(@"C:\Users\Administrator\Desktop\1.txt", FileMode.OpenOrCreate, FileAccess.Write))
+            //{
+            //    //使用BinaryFormatter将对象序列化为二进制
+            //    BinaryFormatter bf = new BinaryFormatter();
+            //    bf.Serialize(fsWrite, o);
+            //}
+            //Console.WriteLine("序列化成功");
+            //Console.ReadKey();
+            #endregion
+
+            #region 反序列化
+            //Order o;
+            //using(FileStream fsRead=new FileStream(@"C:\Users\Administrator\Desktop\1.txt", FileMode.OpenOrCreate, FileAccess.Read))
+            //{
+            //    BinaryFormatter bf = new BinaryFormatter();
+            //   o= (Order)bf.Deserialize(fsRead);
+            //}
+            //Console.WriteLine(o.Name);
+            //Console.WriteLine(o.Age);
+            //Console.WriteLine(o.Gender);
+
+            #endregion
 
             #region 两个集合去除重复排列一下成一个
             //List<string> lsitOne = new List<string> { "a", "b", "c", "d", "f" };
@@ -530,9 +614,66 @@ namespace DotnetBasis
             //Console.ReadKey();
             #endregion
 
-
+            #endregion
 
         }
+        #region 基础
+        #region 多播委托
+        //public static void T1()
+        //{
+        //    Console.WriteLine("我是T1");
+        //}
+
+        //public static void T2()
+        //{
+        //    Console.WriteLine("我是T2");
+        //}
+        //public static void T3()
+        //{
+        //    Console.WriteLine("我是T3");
+        //}
+        //public static void T4()
+        //{
+        //    Console.WriteLine("我是T4");
+        //}
+        #endregion
+
+        #region 泛型委托
+        //public static T GetMax<T>(T[] nums,DelConpare<T> del)
+        //{
+        //    T max = nums[0];
+        //    for (int i = 0; i < nums.Length; i++)
+        //    {
+        //        if (del(max,nums[i])<0)
+        //        {
+        //            max = nums[i];
+        //        }
+        //    }
+        //    return max;
+        //}
+
+        //public static int Comparel(int n1,int n2)
+        //{
+        //    return n1 - n2;
+        //}
+        #endregion
+
+        #region 委托
+        //public static void Test(string name, DelSayHi del)
+        //{
+        //    del(name);
+        //}
+
+        //public static void SayHelloChinese(string name)
+        //{
+        //    Console.WriteLine("吃了吗" + name);
+
+        //}
+        //public static void SayHelloEnglish(string name)
+        //{
+        //    Console.WriteLine("Nice to meet you" + name);
+        //}
+        #endregion
 
         #region 加减乘除
         public static CalFather GetCal(string opera, double n1, double n2)
@@ -573,7 +714,9 @@ namespace DotnetBasis
         //    return ff;//为什么返回一个父类的文件，因为我们不知道他选择了什么类型的文件
         //}
         #endregion
+        #endregion
     }
+    #region 基础
 
 
     #region 接口小练习1
@@ -667,5 +810,5 @@ namespace DotnetBasis
     //    }
     //}
     #endregion
-
+    #endregion
 }
