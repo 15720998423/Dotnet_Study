@@ -17,6 +17,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace DotnetBasis
@@ -32,6 +33,18 @@ namespace DotnetBasis
        
         static void Main(string[] args)
         {
+
+            #region Task
+            //Task.Run(() => Console.WriteLine("foo"));
+
+            //Task<int> test = Task.Run(() => {
+            //    Console.WriteLine("foo");
+            //    return 3;
+            //});
+
+            //int result = test.Result;//如果test没完成，那么久阻塞
+            //Console.WriteLine(result);
+            #endregion
 
             #region 基础
             #region 多播委托
@@ -281,7 +294,7 @@ namespace DotnetBasis
 
             //foreach (var item in ans)
             //{
-            //    item.GetFood();//多态是指行为的多台
+            //    item.GetFood();//多态是指行为的多态
 
             //}
             //Console.ReadKey();
@@ -617,6 +630,7 @@ namespace DotnetBasis
             #endregion
 
         }
+
         #region 基础
         #region 多播委托
         //public static void T1()
